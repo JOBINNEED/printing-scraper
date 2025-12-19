@@ -76,10 +76,10 @@ async def seed_data():
         machines.append(machine)
         
         # Add price history (some machines have price changes)
-        if random.random() > 0.7:  # 30% have price changes
-            num_changes = random.randint(1, 3)
+        if random.random() > 0.7 and days_ago > 1:  # 30% have price changes
+            num_changes = random.randint(1, min(3, days_ago))
             for j in range(num_changes):
-                price_date = first_seen + timedelta(days=random.randint(1, days_ago))
+                price_date = first_seen + timedelta(days=random.randint(1, max(2, days_ago)))
                 price_variation = random.uniform(-0.15, 0.05)  # Mostly price drops
                 price = int(base_price * (1 + price_variation))
                 
