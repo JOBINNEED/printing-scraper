@@ -49,9 +49,9 @@ MarketIntel replaces manual daily searching with an automated, professional dash
 ### Phase 1 (Implemented)
 - Machineseeker
 - Exapro
+- Kitmondo (Experimental)
 
 ### Future Expansion
-- Kitmondo
 - MachinePoint
 - PressXchange
 - Auction sources (RSS/email)

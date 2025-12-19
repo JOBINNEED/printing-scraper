@@ -8,7 +8,7 @@ from pathlib import Path
 from pydantic import BaseModel, Field, ConfigDict
 from typing import List, Optional
 from datetime import datetime, timezone
-from scrapers import machineseeker_scraper, exapro_scraper
+from scrapers import machineseeker_scraper, exapro_scraper, kitmondo_scraper
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import asyncio
 
@@ -228,6 +228,19 @@ async def run_scrapers():
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "status": "success",
             "message": f"Processed {ex_count} listings"
+        })
+
+        logger.info("Starting Kitmondo scraper...")
+        km_listings = await kitmondo_scraper.scrape()
+        km_count = await process_listings(km_listings, "Kitmondo")
+        total_processed += km_count
+
+        await db.scraper_logs.insert_one({
+            "source": "Kitmondo",
+            "listings_found": km_count,
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "status": "success",
+            "message": f"Processed {km_count} listings"
         })
         
         await update_machine_status()
