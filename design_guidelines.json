@@ -1,0 +1,146 @@
+{
+  "identity": {
+    "name": "MarketIntel",
+    "archetype": "Swiss & High-Contrast",
+    "vibe": "Industrial, Precision, Objective, Data-First",
+    "principles": [
+      "Fusion: Swiss Poster Layouts x Bloomberg Terminal Density",
+      "Emotion: Trust through Clarity. No decoration, only data.",
+      "Content: The 'Price' and 'Status' are the heroes.",
+      "Contrast: Stark black/white with 'Safety Orange' for critical alerts."
+    ]
+  },
+  "typography": {
+    "primary_font": "IBM Plex Sans",
+    "heading_font": "Chivo",
+    "mono_font": "JetBrains Mono",
+    "scale": {
+      "h1": "text-4xl font-black tracking-tight leading-none",
+      "h2": "text-3xl font-bold tracking-tight",
+      "h3": "text-xl font-semibold tracking-tight",
+      "body": "text-base font-normal leading-relaxed",
+      "small": "text-sm font-medium text-muted-foreground",
+      "mono": "font-mono text-xs tracking-wide"
+    },
+    "imports": [
+      "@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700;900&family=IBM+Plex+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');"
+    ]
+  },
+  "colors": {
+    "palette": {
+      "background": "#F8FAFC",
+      "foreground": "#0F172A",
+      "card": "#FFFFFF",
+      "card_foreground": "#0F172A",
+      "primary": "#0F172A",
+      "primary_foreground": "#F8FAFC",
+      "secondary": "#F1F5F9",
+      "secondary_foreground": "#0F172A",
+      "muted": "#F1F5F9",
+      "muted_foreground": "#64748B",
+      "accent": "#F97316",
+      "accent_foreground": "#FFFFFF",
+      "destructive": "#EF4444",
+      "border": "#E2E8F0",
+      "input": "#E2E8F0",
+      "ring": "#0F172A"
+    },
+    "semantic": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "info": "#3B82F6",
+      "price_drop": "#10B981",
+      "price_increase": "#EF4444",
+      "sold": "#64748B"
+    },
+    "gradients": {
+      "subtle_glow": "bg-gradient-to-b from-white to-slate-50",
+      "active_border": "bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900"
+    }
+  },
+  "layout": {
+    "spacing_scale": "px-4 py-6 md:px-8 md:py-12 lg:px-12 lg:py-16",
+    "container": "max-w-7xl mx-auto",
+    "grid_systems": {
+      "dashboard": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
+      "listings": "grid grid-cols-1 gap-4",
+      "detail": "grid grid-cols-1 lg:grid-cols-12 gap-8"
+    },
+    "surfaces": {
+      "card": "bg-white border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-200",
+      "panel": "bg-slate-50 border border-slate-200",
+      "header": "bg-white/80 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-slate-900 text-white hover:bg-slate-800 rounded-md px-6 py-2 font-medium transition-all active:scale-95",
+      "secondary": "bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 rounded-md px-6 py-2 font-medium transition-all",
+      "ghost": "hover:bg-slate-100 text-slate-600 hover:text-slate-900"
+    },
+    "badges": {
+      "active": "bg-emerald-100 text-emerald-700 border-emerald-200",
+      "sold": "bg-slate-100 text-slate-600 border-slate-200",
+      "removed": "bg-red-100 text-red-700 border-red-200",
+      "price_drop": "bg-orange-100 text-orange-700 border-orange-200"
+    },
+    "inputs": {
+      "default": "bg-white border-slate-200 focus:border-slate-900 focus:ring-1 focus:ring-slate-900 rounded-md"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_machinery": "https://images.unsplash.com/photo-1581508512961-0e3b9524db40?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "factory_floor": "https://images.unsplash.com/photo-1764185800646-f75f7e16e465?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "printing_press": "https://images.unsplash.com/photo-1744126175546-d7c5366e94f9?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "packaging_line": "https://images.unsplash.com/photo-1730705788367-dbd288c40ee7?crop=entropy&cs=srgb&fm=jpg&q=85"
+    },
+    "icons": "lucide-react"
+  },
+  "motion": {
+    "transitions": {
+      "default": "transition-all duration-200 ease-out",
+      "slow": "transition-all duration-500 ease-in-out"
+    },
+    "animations": {
+      "fade_in": {
+        "initial": { "opacity": 0, "y": 10 },
+        "animate": { "opacity": 1, "y": 0 },
+        "transition": { "duration": 0.4 }
+      },
+      "list_stagger": {
+        "container": {
+          "hidden": { "opacity": 0 },
+          "show": {
+            "opacity": 1,
+            "transition": { "staggerChildren": 0.05 }
+          }
+        },
+        "item": {
+          "hidden": { "opacity": 0, "y": 20 },
+          "show": { "opacity": 1, "y": 0 }
+        }
+      }
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Install 'lucide-react', 'recharts', 'framer-motion', 'clsx', 'tailwind-merge' immediately.",
+    "2. FONTS: Add the Google Fonts import to 'index.css' at the very top.",
+    "3. THEME: Update 'tailwind.config.js' with the colors defined in 'colors.palette'. Use CSS variables in 'index.css' for dynamic theming if needed, but hardcoded hex in config is fine for MVP.",
+    "4. LAYOUT: Use the 'Control Room' grid for the Dashboard. It must be dense. No wasted whitespace in data cards.",
+    "5. COMPONENTS: Use Shadcn UI for all interactive elements (Select, Table, Dialog, Form). Customize them to match the 'Swiss' aesthetic (sharp corners or small radius 'rounded-md', high contrast borders).",
+    "6. CHARTS: Use 'recharts' for Price History. Style them minimally: simple lines, no grid lines (or very subtle), tooltips on hover.",
+    "7. DATA DISPLAY: For the 'All Listings' table, use a sticky header. Ensure columns align perfectly. Use 'JetBrains Mono' for prices and dates.",
+    "8. IMAGES: Use the provided image URLs for the 'Machine Detail' placeholders or 'Overview' hero banners.",
+    "9. NAVIGATION: Create a sidebar or top-nav that is persistent. Use 'lucide-react' icons for 'Dashboard', 'Listings', 'Settings'.",
+    "10. EMPTY STATES: If no data is present, show a clean empty state with a 'Trigger Scraper' button."
+  ],
+  "universal_guidelines": [
+    "Do not use gradients for backgrounds. Use solid colors or subtle noise.",
+    "Always use 'data-testid' for interactive elements.",
+    "Ensure text contrast ratios meet WCAG AA.",
+    "Use 'sonner' for notifications (e.g., 'Scraper started').",
+    "Avoid 'Inter' font. Use 'IBM Plex Sans' and 'Chivo'."
+  ]
+}
