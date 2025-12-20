@@ -8,7 +8,7 @@ from pathlib import Path
 from pydantic import BaseModel, Field, ConfigDict
 from typing import List, Optional
 from datetime import datetime, timezone
-from scrapers import machineseeker_scraper, exapro_scraper
+from scrapers import machineseeker_scraper, exapro_scraper, kitmondo_scraper, pressxchange_scraper
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import asyncio
 
@@ -217,17 +217,35 @@ async def run_scrapers():
             "message": f"Processed {ms_count} listings"
         })
         
-        logger.info("Starting Exapro scraper...")
-        ex_listings = await exapro_scraper.scrape()
-        ex_count = await process_listings(ex_listings, "Exapro")
-        total_processed += ex_count
+        # Exapro Scraper Removed
+        
+        
+        logger.info("Starting Kitmondo scraper...")
+        kit_listings = await kitmondo_scraper.scrape()
+        kit_count = await process_listings(kit_listings, "Kitmondo")
+        total_processed += kit_count
         
         await db.scraper_logs.insert_one({
-            "source": "Exapro",
-            "listings_found": ex_count,
+            "source": "Kitmondo",
+            "listings_found": kit_count,
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "status": "success",
-            "message": f"Processed {ex_count} listings"
+            "message": f"Processed {kit_count} listings"
+        })
+
+        # Exapro removed per user request (redundant with Kitmondo)
+        
+        logger.info("Starting PressXchange scraper...")
+        px_listings = await pressxchange_scraper.scrape()
+        px_count = await process_listings(px_listings, "PressXchange")
+        total_processed += px_count
+
+        await db.scraper_logs.insert_one({
+            "source": "PressXchange",
+            "listings_found": px_count,
+            "timestamp": datetime.now(timezone.utc).isoformat(),
+            "status": "success",
+            "message": f"Processed {px_count} listings"
         })
         
         await update_machine_status()

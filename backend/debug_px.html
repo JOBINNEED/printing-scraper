@@ -1,0 +1,578 @@
+<html lang="en"><head><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+<!-- Google tag (gtag.js) -->
+<script async="" type="text/javascript" src="https://www.googletagservices.com/tag/js/gpt.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=AW-986234011&amp;cx=c&amp;gtm=4e5ca1"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7H0Y3J7H0H"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-7H0Y3J7H0H');
+gtag('config', 'AW-986234011');
+var oSite =
+{
+sRecaptchaSiteKey: '6LfcLxAdAAAAAPaP-DACCuw2nQhaxcT-T0Q1odZL',
+bRecaptchaLoaded: 0
+}
+</script>
+<script type="text/javascript" src="https://589b3ce2983a.eu-west-1.captcha-sdk.awswaf.com/589b3ce2983a/jsapi.js" defer=""></script>
+<script>
+window.addEventListener("load", async () => {
+try {
+const token = await AwsWafIntegration.getToken();
+console.log("Got WAF token:", token);
+// You can manually attach it to requests if needed
+// e.g., send token to your API
+// fetch("/api/data", { headers: { "x-aws-waf-token": token } });
+} catch (err) {
+console.error("Failed to get AWS WAF token:", err);
+}
+});
+</script>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="yandex-verification" content="b05c7a3ceeb9ca6c">
+<meta name="msvalidate.01" content="FDD97C49689BC2B5C7AEB5E9B479E47A">
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="shortcut icon" href="https://www.pressxchange.com/favicon.ico">
+<link rel="icon" sizes="192x192" href="/PXC_192x192.png">
+<link rel="apple-touch-icon" href="/PXC_192x192.png">
+<meta name="msapplication-square310x310logo" content="/PXC_310x310.png">
+<meta name="msapplication-square70x70logo" content="/PXC_70x70.png">
+<meta name="msapplication-square150x150logo" content="/PXC_150x150.png">
+<meta name="msapplication-wide310x150logo" content="/PXC_310x150.png">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/bootstrap4/style.css?v=2" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="/css/bootstrap4/style.css?v=2">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/advertiseV2.js?v=2"></script>
+<script async="" src="/js/imageFailover.js"></script>
+<script src="https://presscity.com/sharedlib/modules/images/js/images.js"></script>
+<script>
+var ad_manufacturer = '';
+var ad_categoryname = ''
+var ad_subcategoryname = '';
+var ad_Model_Range = '';
+var ad_Model = '';
+var ad_Premium_Dealer = false;
+var ad_Special_Features = '';
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+var aBannersToRun = [];
+$(function ()
+{
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+});
+</script>
+<!-- Bootstrap CSS -->
+<script src="https://589b3ce2983a.33995df2.eu-west-1.token.awswaf.com/589b3ce2983a/challenge.js"></script><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/986234011/?random=1766233756298&amp;cv=11&amp;fst=1766233756298&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45be5ca1za200zb898233406zd898233406xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=103116026~103200004~104527907~104528501~104684208~104684211~105391253~115583767~115938466~115938468~116184927~116184929~116251938~116251940&amp;u_w=800&amp;u_h=600&amp;url=https%3A%2F%2Fwww.pressxchange.com%2Fen%2Fresults%2Fsearch%3Fq%3Dspare%2Bparts&amp;frm=0&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=2132811426.1766233756&amp;uaa=&amp;uab=&amp;uafvl=&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9nrunKdU5m96PSN1XsSGr3qOP0lvPFUB2AiAylCDlN5DTl17uDFkpQuHj1AFtgWLxpLaiBZuhrtb2WOu7ofHwEAAACKeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A93bovR+QVXNx2/38qDbmeYYf1wdte9EO37K9eMq3r+541qo0byhYU899BhPB7Cv9QqD7wIbR1B6OAc9kEfYCA4AAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A1S5fojrAunSDrFbD8OfGmFHdRFZymSM/1ss3G+NEttCLfHkXvlcF6LGLH8Mo5PakLO1sCASXU1/gQf6XGuTBgwAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElNdWx0aW1vZGFsSW5wdXQiLCJleHBpcnkiOjE3NzQzMTA0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202512040101/pubads_impl.js" async=""></script><link href="https://securepubads.g.doubleclick.net/pagead/managed/dict/m202512040101/gpt" rel="compression-dictionary"></head>
+<body>
+<section class="top-banner-section">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 m-t m-b d-none d-sm-block">
+<!-- /50162522/ROS_LBTOP -->
+<div id="div-gpt-ad-1559915273635-0" style="height: 90px; width: 728px; margin-left: auto; margin-right: auto;" data-google-query-id="CK2tp72VzJEDFeUiBgAdUywz2g">
+
+<div id="google_ads_iframe_/50162522/ROS_LBTOP_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/50162522/ROS_LBTOP_0" name="google_ads_iframe_/50162522/ROS_LBTOP_0" title="3rd party ad content" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" data-google-container-id="1" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+</div>
+</div>
+</div>
+</section>
+<section class="top-section">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 m-t">
+<!-- /50162522/HP_LBTop -->
+<span class="float-left left-item">
+Follow Us:</span>
+<a title="Follow us on Linked In" href="https://www.linkedin.com/company/pressxchangecom" target="_blank" class="left-item float-left"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+<a title="Subcribe to our YouTube channel" href="https://www.youtube.com/watch?v=BMuIqPwy0lY" target="_blank" class="left-item float-left"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+<a href="/en/register/" title="Sign up on our portal" class="float-right right-item"><i class="fa fa-user-plus" aria-hidden="true"></i>
+Sign up </a>
+<a href="/en/login/" title="Log in on our portal" class="float-right right-item"><i class="fa fa-user" aria-hidden="true"></i>
+Login </a>
+</div>
+<div class="col-lg-12">
+<hr>
+</div>
+<div class="col-lg-12 m-b">
+<a href="/en/" class="float-left">
+<img width="230" height="70" title="pressXchange" alt="pressXchange" src="https://cdn.pressxchange.com/PXC/Themes/Pressxchange/Content/images/pressXchangeOfficial.png">
+</a>
+<div class="d-none d-md-block mb" style="float:right;">
+</div>
+<button class="btn btn-primary float-right m-l m-t" onclick="window.open('/en/private-sellers/add-product/','_self');">
+SELL YOUR MACHINE <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+<button class="btn btn-primary float-right btn-primary-extra m-t" onclick="openNewsletterModal();">SUBSCRIBE TO OUR NEWSLETTER <i class="fa fa-caret-right" aria-hidden="true"></i></button>
+</div>
+</div>
+</div>
+</section>
+<section class="menu-section">
+<div class="container">
+<nav class="navbar navbar-expand-lg m-b">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item ">
+<a class="nav-link" href="/en/">Home<span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Search
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="/en/search/">Basic Search</a>
+<a class="dropdown-item" href="/en/advanced-search/">Advanced Search</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Newest Entries
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="/en/search/listtype/2/just-listed/">Newest SheetFed</a>
+<a class="dropdown-item" href="/en/search/listtype/3/just-listed/">Newest PostPress/Bindery/Packing</a>
+<a class="dropdown-item" href="/en/search/listtype/8/just-listed/">Newest Digital</a>
+<a class="dropdown-item" href="/en/search/listtype/1/just-listed/">Just listed</a>
+</div>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="/en/pressxchangesearchdealer/searchbydealer/">Search by Dealer<span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Auction Calendar
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="/en/auctions/">All Upcoming Auctions</a>
+<a class="dropdown-item" href="/en/addeditauction/">List an Auction</a>
+</div>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="/en/events/">Events<span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="/en/login/">My pressXchange<span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item ">
+<a class="nav-link" href="/en/latest-news/">News<span class="sr-only">(current)</span></a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</section>
+<script src="/inc/contactForm/js/contactForm.js?nocache=6B202DB7037328F32E0E2EA9F36E5C9B"></script>
+<table style="display:none;">
+<tbody><tr><td><label id="pxcenquirymachinedetail"></label><br></td></tr>
+<tr><td><label id="pxcenquirysubcategory"></label><br></td></tr>
+<tr><td><label id="pxcenquirycategory"></label><br></td></tr>
+<tr><td><label id="pxcenquirymanufacturer"></label></td></tr>
+<tr><td><label id="pxcenquirymodelrange"></label></td></tr>
+<tr><td><label id="pxcenquirymodel"></label></td></tr>
+<tr><td><label id="pxcenquirycolours"></label></td></tr>
+<tr><td><label id="pxcenquirysheetsize"></label></td></tr>
+<tr><td><label id="pxcenquirypresslocation"></label></td></tr>
+<tr><td><label id="pxcenquiryyearofmanufacture"></label></td></tr>
+<tr><td><label id="pxcenquiryfeatures"></label></td></tr>
+</tbody></table>
+<link rel="stylesheet" href="/css/bootstrap4/cms-styles.css?nocache=6B202DB7037328F32E0E2EA9F36E5C9B">
+<section class="section">
+<div class="container">
+<div class="row">
+<div class="col-lg-9">
+<div class="card m-b cms-card">
+<div class="card-body ">
+<h1>
+Page not found
+</h1>
+</div>
+</div>
+<div class="card cms-card">
+<div class="card-body">
+This may be because you typed in an incorrect url, or there is a broken link or you do not have access this section of the site. Please contact us for further help. Thank you.
+<script>// <![CDATA[
+window.onload = function () {
+ewt.trackEvent({ name: 'Page not found', type: 'pxctopic'});
+}
+// ]]></script>
+</div>
+</div>
+</div>
+<div class="col-lg-3">
+<div class="card m-b bnr-card">
+<div class="card-header"><h3>Advertisement</h3></div>
+<div class="card-body">
+<!-- /50162522/ROS_MPU1 -->
+<div id="div-gpt-ad-1444237303347-0" class="m-b" style="height: 250px; width: 250px; margin-left: auto; margin-right: auto;" data-google-query-id="CK6tp72VzJEDFeUiBgAdUywz2g">
+<div id="google_ads_iframe_/50162522/ROS_MPU1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/50162522/ROS_MPU1_0" name="google_ads_iframe_/50162522/ROS_MPU1_0" title="3rd party ad content" width="250" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" data-google-container-id="2" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+<!-- /50162522/ROS_MPU2 -->
+<div id="div-gpt-ad-1444237333798-0" class="m-b" style="height: 250px; width: 250px; margin-left: auto; margin-right: auto;" data-google-query-id="CK-tp72VzJEDFeUiBgAdUywz2g">
+<div id="google_ads_iframe_/50162522/ROS_MPU2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/50162522/ROS_MPU2_0" name="google_ads_iframe_/50162522/ROS_MPU2_0" title="3rd party ad content" width="250" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" data-google-container-id="3" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+<!-- /50162522/ROS_MPU3 -->
+<div id="div-gpt-ad-1444237362766-0" class="m-b" style="height: 250px; width: 250px; display: none; margin-left: auto; margin-right: auto;" data-google-query-id="CLCtp72VzJEDFeUiBgAdUywz2g">
+<div id="google_ads_iframe_/50162522/ROS_MPU3_0__container__" style="border: 0pt none; width: 250px; height: 0px;"></div></div>
+<!-- /50162522/ROS_SB1 -->
+<div id="div-gpt-ad-1444237394781-0" class="m-b" style="height: 100px; width: 250px; margin-left: auto; margin-right: auto;" data-google-query-id="CLGtp72VzJEDFeUiBgAdUywz2g">
+<div id="google_ads_iframe_/50162522/ROS_SB1_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/50162522/ROS_SB1_0" name="google_ads_iframe_/50162522/ROS_SB1_0" title="3rd party ad content" width="250" height="100" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" data-google-container-id="5" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+<!-- /50162522/ROS_SB2 -->
+<div id="div-gpt-ad-1556789956681-0" class="m-b" style="height: 100px; width: 250px; margin-left: auto; margin-right: auto;" data-google-query-id="CLKtp72VzJEDFeUiBgAdUywz2g">
+<div id="google_ads_iframe_/50162522/ROS_SB2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/50162522/ROS_SB2_0" name="google_ads_iframe_/50162522/ROS_SB2_0" title="3rd party ad content" width="250" height="100" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" data-google-container-id="6" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+<!-- /50162522/ROS_SB3 -->
+<div id="div-gpt-ad-1444237470401-0" class="m-b" style="height: 100px; width: 250px; margin-left: auto; margin-right: auto;" data-google-query-id="CLOtp72VzJEDFeUiBgAdUywz2g">
+<div id="google_ads_iframe_/50162522/ROS_SB3_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/50162522/ROS_SB3_0" name="google_ads_iframe_/50162522/ROS_SB3_0" title="3rd party ad content" width="250" height="100" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" data-google-container-id="7" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+<!-- /50162522/ROS_SB4 -->
+<div id="div-gpt-ad-1444237498036-0" class="m-b" style="height: 100px; width: 250px; margin-left: auto; margin-right: auto;" data-google-query-id="CLStp72VzJEDFeUiBgAdUywz2g">
+<div id="google_ads_iframe_/50162522/ROS_SB4_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/50162522/ROS_SB4_0" name="google_ads_iframe_/50162522/ROS_SB4_0" title="3rd party ad content" width="250" height="100" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" data-load-complete="true" data-google-container-id="8" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+</div>
+</div>
+<div class="card m-b" id="auction-signup-box">
+<div class="card-body text-center">
+<h3>Auction Calendar</h3>
+<p class="card-text"><strong>Don't miss upcoming auctions</strong></p>
+<div class="row m-b">
+<div class="col-sm-3">
+</div>
+<div class="col-sm-6">
+<img src="https://cdn.pressxchange.com/PXC/gfx/PXC_gavel.png" width="132" height="121" alt="Auction gavel" class="img-fluid">
+</div>
+<div class="col-sm-3">
+</div>
+</div>
+<input type="text" id="auction-email" placeholder="Your e-mail" class="form-control m-b text-center">
+<button class="btn btn-primary btn-block btn-primary-extra" onclick="subscribeToAuctionEmails(1);">Sign up to our e-mail alert</button>
+</div>
+</div>
+<script src="/inc/starMachineWidget/js/starMachineWidget.js"></script>
+<div class="card m-b" id="star-machine-widget">
+<div class="card-header">
+<span class="my-auto">STAR MACHINES</span>
+<span class="float-right">
+<a class="btn btn-secondary btn-sm" href="#carouselExampleIndicators2" role="button" data-slide="next">
+<i class="fa fa-chevron-left" aria-hidden="true"></i>
+</a>
+<a class="btn btn-secondary btn-sm" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+<i class="fa fa-chevron-right" aria-hidden="true"></i>
+</a>
+</span></div>
+<div class="card-body">
+<div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item">
+<div class="row">
+<div class="col-md-12">
+<a target="_blank" href="/en/heidelberg-sm-xl-106-8p-year-2017/machine-id/445158/"><img class="w-100" src="https://cdn.pressxchange.com/53/320/x320_heidelberg-smxl106-12523931.jpg" onerror="failoverV2(this,'12523931_320',12523931,320);" alt="Heidelberg SM XL 106-8P"></a>
+</div>
+<div class="col-md-12 star-machine-widget-text-container">
+<div class="header">2017 Heidelberg SM XL 106-8P</div>
+<div class="category">Sheetfed offset</div>
+<button class="btn btn-secondary btn-sm" onclick="window.open('/en/heidelberg-sm-xl-106-8p-year-2017/machine-id/445158/','_blank');">View Details</button>
+</div>
+</div>
+</div>
+<div class="carousel-item active">
+<div class="row">
+<div class="col-md-12">
+<a target="_blank" href="/en/bobst-novacut-sp-106-er-30-year-2018/machine-id/445166/"><img class="w-100" src="https://cdn.pressxchange.com/3153/320/x320_bobst-novacut106er-12524034.jpg" onerror="failoverV2(this,'12524034_320',12524034,320);" alt="Bobst Novacut SP 106 ER 3.0"></a>
+</div>
+<div class="col-md-12 star-machine-widget-text-container">
+<div class="header">2018 Bobst Novacut SP 106 ER 3.0</div>
+<div class="category">Die Cutters - Automatic and Handfed</div>
+<button class="btn btn-secondary btn-sm" onclick="window.open('/en/bobst-novacut-sp-106-er-30-year-2018/machine-id/445166/','_blank');">View Details</button>
+</div>
+</div>
+</div>
+<div class="carousel-item ">
+<div class="row">
+<div class="col-md-12">
+<a target="_blank" href="/en/gietz-fsa-790-eff-foil-stamping-machine-fully-reconditioned-by-exclusive-uk-gietz-distributor-year-1997/machine-id/444989/"><img class="w-100" src="https://cdn.pressxchange.com/2370/320/x320_gietz-allmodels-12521808.jpg" onerror="failoverV2(this,'12521808_320',12521808,320);" alt="Gietz FSA 790 EFF foil stamping machine : fully reconditioned by exclusive UK Gietz distributor "></a>
+</div>
+<div class="col-md-12 star-machine-widget-text-container">
+<div class="header">1997 Gietz FSA 790 EFF foil stamping machine : fully reconditioned by exclusive UK Gietz distributor </div>
+<div class="category">Foil Blockers </div>
+<button class="btn btn-secondary btn-sm" onclick="window.open('/en/gietz-fsa-790-eff-foil-stamping-machine-fully-reconditioned-by-exclusive-uk-gietz-distributor-year-1997/machine-id/444989/','_blank');">View Details</button>
+</div>
+</div>
+</div>
+<div class="carousel-item ">
+<div class="row">
+<div class="col-md-12">
+<a target="_blank" href="/en/kba-rapida-105-5-l-fapc-alv2-cx-year-2019/machine-id/445327/"><img class="w-100" src="https://cdn.pressxchange.com/433/320/x320_kba-rapida105-12530905.jpg" onerror="failoverV2(this,'12530905_320',12530905,320);" alt="KBA Rapida 105-5+L FAPC ALV2 CX"></a>
+</div>
+<div class="col-md-12 star-machine-widget-text-container">
+<div class="header">2019 KBA Rapida 105-5+L FAPC ALV2 CX</div>
+<div class="category">Sheetfed offset</div>
+<button class="btn btn-secondary btn-sm" onclick="window.open('/en/kba-rapida-105-5-l-fapc-alv2-cx-year-2019/machine-id/445327/','_blank');">View Details</button>
+</div>
+</div>
+</div>
+<div class="carousel-item ">
+<div class="row">
+<div class="col-md-12">
+<a target="_blank" href="/en/heidelberg-speedmaster-sm-52-5-se-year-2003/machine-id/443350/"><img class="w-100" src="https://cdn.pressxchange.com/102/320/x320_heidelberg-sm52-12510331.jpg" onerror="failoverV2(this,'12510331_320',12510331,320);" alt="Heidelberg Speedmaster SM 52-5 SE"></a>
+</div>
+<div class="col-md-12 star-machine-widget-text-container">
+<div class="header">2003 Heidelberg Speedmaster SM 52-5 SE</div>
+<div class="category">Sheetfed offset</div>
+<button class="btn btn-secondary btn-sm" onclick="window.open('/en/heidelberg-speedmaster-sm-52-5-se-year-2003/machine-id/443350/','_blank');">View Details</button>
+</div>
+</div>
+</div>
+<div class="carousel-item ">
+<div class="row">
+<div class="col-md-12">
+<a target="_blank" href="/en/heidelberg-speedmaster-xl-75-5-p-lx-year-2009/machine-id/440986/"><img class="w-100" src="https://cdn.pressxchange.com/102/320/x320_heidelberg-smxl75-12369085.jpg" onerror="failoverV2(this,'12369085_320',12369085,320);" alt="Heidelberg Speedmaster XL 75-5-P-LX"></a>
+</div>
+<div class="col-md-12 star-machine-widget-text-container">
+<div class="header">2009 Heidelberg Speedmaster XL 75-5-P-LX</div>
+<div class="category">Sheetfed offset</div>
+<button class="btn btn-secondary btn-sm" onclick="window.open('/en/heidelberg-speedmaster-xl-75-5-p-lx-year-2009/machine-id/440986/','_blank');">View Details</button>
+</div>
+</div>
+</div>
+<div class="carousel-item ">
+<div class="row">
+<div class="col-md-12">
+<a target="_blank" href="/en/ryobi-525-gx-l-5-d-year-2010/machine-id/185472/"><img class="w-100" src="https://cdn.pressxchange.com/102/320/x320_ryobi-520-522-12467274.jpg" onerror="failoverV2(this,'12467274_320',12467274,320);" alt="Ryobi 525 GX-L (5-D)"></a>
+</div>
+<div class="col-md-12 star-machine-widget-text-container">
+<div class="header">2010 Ryobi 525 GX-L (5-D)</div>
+<div class="category">Sheetfed offset</div>
+<button class="btn btn-secondary btn-sm" onclick="window.open('/en/ryobi-525-gx-l-5-d-year-2010/machine-id/185472/','_blank');">View Details</button>
+</div>
+</div>
+</div>
+<div class="carousel-item ">
+<div class="row">
+<div class="col-md-12">
+<a target="_blank" href="/en/komori-lithrone-gl-529-h-year-2017/machine-id/442245/"><img class="w-100" src="https://cdn.pressxchange.com/53/320/x320_komori-lithronegl-29-12412779.jpg" onerror="failoverV2(this,'12412779_320',12412779,320);" alt="Komori Lithrone GL 529 (H)"></a>
+</div>
+<div class="col-md-12 star-machine-widget-text-container">
+<div class="header">2017 Komori Lithrone GL 529 (H)</div>
+<div class="category">Sheetfed offset</div>
+<button class="btn btn-secondary btn-sm" onclick="window.open('/en/komori-lithrone-gl-529-h-year-2017/machine-id/442245/','_blank');">View Details</button>
+</div>
+</div>
+</div>
+<div class="carousel-item ">
+<div class="row">
+<div class="col-md-12">
+<a target="_blank" href="/en/heidelberg-suprasetter-106-year-2012/machine-id/444892/"><img class="w-100" src="https://cdn.pressxchange.com/66/320/x320_heidelberg-suprasetter106-12517699.jpg" onerror="failoverV2(this,'12517699_320',12517699,320);" alt="Heidelberg Suprasetter 106"></a>
+</div>
+<div class="col-md-12 star-machine-widget-text-container">
+<div class="header">2012 Heidelberg Suprasetter 106</div>
+<div class="category">CTP-Systems</div>
+<button class="btn btn-secondary btn-sm" onclick="window.open('/en/heidelberg-suprasetter-106-year-2012/machine-id/444892/','_blank');">View Details</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="footer-section m-t">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 text-center m-t m-b">
+<h5>
+About us</h5>
+<a href="/en/contact-pressxchange/">
+Contacts</a> | <a href="/en/about-us-1/">
+About us</a> | <a href="/en/advertise-with-us/">
+Advertising Online</a> | <a href="/en/sitemap/">
+Sitemap </a>
+</div>
+<div class="col-lg-4 m-t text-center m-b">
+<h5>
+Users Area</h5>
+<a href="/en/register/">
+Become a dealer</a> | <a href="/en/private-sellers/add-product/">
+Sell a machine</a> | <a href="/en/login">
+Machine Wanted</a>
+</div>
+<div class="col-lg-4 m-t text-center m-b">
+<a href="/en/">
+<img data-src="https://cdn.pressxchange.com/PXC/Themes/Pressxchange/Content/images/pressXchangeOfficial.png" width="230" height="70" alt="pressXchange" title="pressXchange" class=" ls-is-cached lazyloaded" src="https://cdn.pressxchange.com/PXC/Themes/Pressxchange/Content/images/pressXchangeOfficial.png">
+</a>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-4 text-center m-t m-b">
+Copyright © 2025 pressXchange. All rights reserved.
+</div>
+<div class="col-lg-4 m-t text-center m-b">
+<div class="row">
+<div class="col-lg-6">
+Payment methods:
+</div>
+<div class="col-lg-6">
+<img data-src="https://cdn.pressxchange.com/PXC/Themes/Pressxchange/Content/images/cardIcons.png" width="198" height="19" alt="JCB VISA MasterCard Maestro American Express" class="img-fluid lazyloaded" src="https://cdn.pressxchange.com/PXC/Themes/Pressxchange/Content/images/cardIcons.png">
+</div>
+</div>
+</div>
+<div class="col-lg-4 m-t text-center m-b">
+<a href="/en/cookies-policy/">
+Cookies Policy</a>
+<a href="/en/terms%2Dconditions/">
+Terms &amp; Conditions</a>
+<a href="/en/privacy%2Dpolicy/">
+Privacy</a>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="col-lg-12 text-center">
+<table style="margin-left: auto;margin-right: auto;">
+<tbody><tr>
+<td style="padding-top: 10px;padding-right: 5px;padding-left: 5px;"><a href="/es/" class="language">
+<img title="Spanish" alt="Spanish" data-src="https://cdn.pressxchange.com/PXC/Content/Images/flags/es.png" width="25" height="13" class=" lazyloaded" src="https://cdn.pressxchange.com/PXC/Content/Images/flags/es.png">
+ES
+</a></td>
+<td style="padding-top: 10px;padding-right: 5px;padding-left: 5px;"><a href="/de/" class="language">
+<img title="German" alt="German" data-src="https://cdn.pressxchange.com/PXC/Content/Images/flags/de.png" width="25" height="13" class=" lazyloaded" src="https://cdn.pressxchange.com/PXC/Content/Images/flags/de.png">
+DE
+</a></td>
+<td style="padding-top: 10px;padding-right: 5px;padding-left: 5px;"><a href="/fr/" class="language">
+<img title="French" alt="French" data-src="https://cdn.pressxchange.com/PXC/Content/Images/flags/fr.png" width="25" height="13" class=" lazyloaded" src="https://cdn.pressxchange.com/PXC/Content/Images/flags/fr.png">
+FR
+</a></td>
+<td style="padding-top: 10px;padding-right: 5px;padding-left: 5px;"><a href="/cn/" class="language">
+<img title="Chinese" alt="Chinese" data-src="https://cdn.pressxchange.com/PXC/Content/Images/flags/cn.png" width="25" height="13" class=" lazyloaded" src="https://cdn.pressxchange.com/PXC/Content/Images/flags/cn.png">
+CN
+</a></td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div class="text-center"><a href="https://www.pressxchange.com/en/machinetools" title="pressXchange used Machine Tools">pressXchange Machine Tools</a></div>
+</section>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script defer="" src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script>
+/*window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-47115582-2');
+gtag('config', 'AW-986234011');*/
+$( document ).ready(function()
+{
+runBanners();
+/*setTimeout(function()
+{
+runBanners();
+}, 1000);*/
+/*window.cookieconsent.initialise(
+{
+"palette":
+{
+"popup":
+{
+"background": "#000"
+},
+"button":
+{
+"background": "#f1d600"
+}
+},
+content: {
+header: 'Cookies used on the website!',
+message: 'Read our new <a href="/en/privacy-policy/" style="color:#C3C3C3;text-decoration:underline;">Privacy Policy</a><br> Read our new <a href="/en/terms-conditions-31/" style="color:#C3C3C3;text-decoration:underline;">Terms and Conditions of Use</a><br>This website uses cookies to ensure you get the best experience on our website.',
+dismiss: 'Allow cookies',
+allow: 'Allow cookies',
+deny: 'Decline',
+link: 'Learn more',
+href: '/en/cookies-policy/',
+close: '&#x274c;',
+},
+onStatusChange: function(status, chosenBefore)
+{
+if(status == 'statusdismiss')
+{
+console.log('cookie dismissed');
+}
+}
+}
+)*/
+});
+</script>
+<div id="shared-large-modal" class="modal" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title"></h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body">
+</div>
+<div class="modal-footer">
+</div>
+</div>
+</div>
+</div>
+<link rel="stylesheet" href="/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script defer="" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script defer="" src="/js/globaltracking/globaltracking.js?v=2"></script>
+<script defer="" src="/js/favorites/favorites.js"></script>
+<script defer="" src="/js/standard.js?v=2"></script>
+<script type="text/javascript">
+$( document ).ready(function()
+{
+addToBannersToRun('div-gpt-ad-1559915273635-0');
+addToBannersToRun('div-gpt-ad-1444237303347-0');
+addToBannersToRun('div-gpt-ad-1444237333798-0');
+addToBannersToRun('div-gpt-ad-1444237362766-0');
+addToBannersToRun('div-gpt-ad-1444237394781-0');
+addToBannersToRun('div-gpt-ad-1556789956681-0');
+addToBannersToRun('div-gpt-ad-1444237470401-0');
+addToBannersToRun('div-gpt-ad-1444237498036-0');
+});
+</script>
+<script type="text/javascript" src="/inc/newsletterModal/js/newslettermodalBootstrap.js?t=6B202DB7037328F32E0E2EA9F36E5C9B"></script>
+<script>
+var oNewsletterSubscribe =
+{
+nLanguageId: 1
+};
+</script>
+<div id="newsletter-modal" class="modal" tabindex="-1" role="dialog">
+<div class="modal-dialog modal-lg" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Newsletter signup</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body"></div>
+</div>
+</div>
+</div>
+<script src="/js/lazysizes/lazysizes.min.js" async=""></script><iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+
+
+
+
+<iframe name="google_ads_top_frame" id="google_ads_top_frame" style="display: none; position: fixed; left: -999px; top: -999px; width: 0px; height: 0px;"></iframe><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body></html>

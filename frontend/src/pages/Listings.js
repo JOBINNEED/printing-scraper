@@ -34,6 +34,7 @@ export const Listings = () => {
 
   useEffect(() => {
     fetchFilters();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {

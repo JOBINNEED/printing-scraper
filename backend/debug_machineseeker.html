@@ -1,0 +1,562 @@
+
+    <!DOCTYPE html>
+    <html lang="en-US">
+    <head>
+        <title>Page not found 404</title>
+        <meta name="robots" content="noindex, follow">
+<link href="https://cdn.machineseeker.com/css/maschinensucher.min.css?v=1765962833" rel="stylesheet">
+<script src="https://cdn.machineseeker.com/js/jquery-3.7.1.min.js?v=1739437402" defer></script>
+<script src="https://cdn.machineseeker.com/data/js/i18n.b_ms_en_US.js?v=1765962174" defer></script>
+<script src="https://cdn.machineseeker.com/js/popper.min.js?v=1739437402" defer></script>
+<script src="https://cdn.machineseeker.com/js/js.cookie.min.js?v=1739437402" defer></script>
+<script src="https://cdn.machineseeker.com/js/frontend/stargate/index-control.min.js?v=1739437402" defer></script>
+<script src="https://cdn.machineseeker.com/assets/1765962893/vendor_yiisoft_yii2_assets/yii.min.js" defer></script>
+<script src="https://cdn.machineseeker.com/assets/1765962893/vendor_yiisoft_yii2_assets/yii.activeForm.min.js" defer></script>
+<script src="https://cdn.machineseeker.com/assets/1765962893/vendor_yiisoft_yii2_assets/yii.validation.min.js" defer></script>
+<script src="https://cdn.machineseeker.com/assets/1765962893/bower_yii2-pjax/jquery.pjax.min.js" defer></script>
+<script src="https://cdn.machineseeker.com/assets/1765962893/bower_bootstrap_dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="https://cdn.machineseeker.com/js/frontend/frontend.min.js?v=1765962796" defer></script>
+<script>document.addEventListener('DOMContentLoaded', function() { $(function () { jQuery('#w0').yiiActiveForm([], {"errorSummary":".alert.alert-danger","errorCssClass":"is-invalid","successCssClass":"is-valid","validationStateOn":"input"});
+header.instantSearch.placeholder = "Search by name, manufacturer, model, ..."
+header.instantSearch.enabled = true }); });</script>        
+    <noscript>
+        <iframe sandbox="allow-same-origin" src="https://www.googletagmanager.com/ns.html?id=GTM-56KKDTG"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    </head>
+    <body>
+                <header>
+            
+
+    <section id="header"
+             class="container-fluid ">
+                    
+<section id="header-logo">
+    <a href="/">
+        <img id="logo-img"
+             src="https://cdn.machineseeker.com/img/frontend/main/logo/ms_logo.svg?v=1739437402" class="img-fluid  d-block" width="200" height="55"
+             alt="Machineseeker"/>
+        <img class="img-fluid d-none" width="48" height="48"
+             loading="lazy" src="https://cdn.machineseeker.com/img/frontend/main/logo/icon_b_ms.svg?v=1739437402"
+             alt="Machineseeker"/>
+                    <div id="logo-subtitle"
+                 class="d-none d-md-block mt-1 text-primary ms">
+                                    International
+                            </div>
+            </a>
+</section>
+            
+
+<section id="header-searchbar" class="d-flex align-items-center gap-r-15 gap-last-0">
+    <div id="category-dropdown" class="d-none d-md-block">
+        <button type="button" onclick="header.categoryDropdown.toggle()"
+                class="btn btn-nowrap btn-outline-gray-45 dropdown-toggle"
+                aria-label="Categories"
+                aria-labelledby="category-dropdown-label">
+           <span class="d-xl-none d-xxl-inline-block" id="category-dropdown-label">
+               Categories           </span>
+        </button>
+
+    </div>
+    
+<form id="search-form" action="/main/search/index"
+      onsubmit=""
+      class="w-100"
+      method="get">
+    <div class="input-group">
+        <input type="text"
+               id="search-input"
+               class="form-control"
+               placeholder="Search by name, manufacturer, model, ..."
+               value=""
+               name="search-word"
+                            oninput="header.instantSearch.checkInput();"
+                onfocus="header.searchHistory.activate()"
+                           autocomplete="off">
+                    <div class="search-history-box z-index-popover shadow-lg position-absolute w-100">
+                <ul class="list-group list-group-flush">
+                                    </ul>
+            </div>
+                        <button id="search-reset" class="btn btn-light border text-muted d-none" type="button"
+                aria-label="Delete"
+                onclick="header.instantSearch.deleteSearchWord()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button id="search-submit" class="btn btn-primary" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search        </button>
+    </div>
+            <div id="instant-search-wrapper" data-before-left="15"
+             class="position-absolute px-3 shadow bg-white w-100 mt-xxl-3 z-index-popover border-top ">
+            <span class="caret d-none d-lg-block"></span>
+            <nav class="navbar navbar-expand-sm px-0 sticky-top d-lg-none ">
+                <ul id="scrollspy-nav" class="navbar-nav flex-no-break flex-row gap-r-15 overflow-scroll-xs">
+                    <li id="machine-type-nav-item" class="nav-item ">
+                        <span class="nav-link active text-dark" style="cursor: pointer;"
+                              onclick="header.instantSearch.scrollTo(this, header.instantSearch.bulletPoints.listingTitle)">
+                            Description                        </span>
+                    </li>
+                    <li id="manufacturer-nav-item" class="nav-item">
+                        <span class="nav-link text-dark" style="cursor: pointer;"
+                              onclick="header.instantSearch.scrollTo(this, header.instantSearch.bulletPoints.manufacturer)">
+                            Manufacturer                        </span>
+                    </li>
+                    <li id="category-nav-item" class="nav-item">
+                        <span class="nav-link text-dark" style="cursor: pointer;"
+                              onclick="header.instantSearch.scrollTo(this, header.instantSearch.bulletPoints.category)">
+                            Category                        </span>
+                    </li>
+                    <li id="product-nav-item" class="nav-item">
+                        <span class="nav-link text-dark" style="cursor: pointer;"
+                              onclick="header.instantSearch.scrollTo(this, header.instantSearch.bulletPoints.product)">
+                            Product                        </span>
+                    </li>
+                </ul>
+            </nav>
+            <div id="instant-search-box" class="row text-start py-3 shadow-sm">
+                <div class="col-12 col-lg d-none instant-search-column" id="machine-type-column">
+                    <p class="text-dark m-0 fw-bold">
+                        Description                    </p>
+                    <div id="listingTitle-isl" class="instant-search-list"></div>
+                </div>
+                <div class="col-12 col-lg d-none instant-search-column" id="manufacturer-column">
+                    <p class="text-dark m-0 fw-bold">
+                        Manufacturer                    </p>
+                    <div id="manufacturer-isl" class="instant-search-list"></div>
+                </div>
+                <div class="col-12 col-lg d-none instant-search-column" id="category-column">
+                    <p class="text-dark m-0 fw-bold">
+                        Category                    </p>
+                    <div id="category-isl" class="instant-search-list"></div>
+                </div>
+                <div class="col-12 col-lg d-none instant-search-column" id="product-column">
+                    <p class="text-dark m-0 fw-bold">
+                        Products                    </p>
+                    <div id="product-isl" class="instant-search-list"></div>
+                </div>
+            </div>
+        </div>
+        </form>
+</section>
+
+
+<section id="header-cta">
+            <a href="/tariffs/"
+           class="sell-now btn btn-cta"
+           data-bs-container="body"
+           data-bs-animation="false"
+           data-bs-trigger="manual"
+           data-bs-template='<div class="popover popover-sell-now mw-rem-24 mw-xxs-rem-12 text-center mw-100" role="tooltip"><div class="arrow"></div><div class="popover-body"></div><h4 class="popover-header"></h4></div>'
+           data-bs-html="true"
+           data-bs-toggle="popover"
+           data-bs-placement="bottom"
+           title="Valid until 31.12."
+           data-bs-content="">
+            <span class="d-none d-xxl-inline">
+                                    Sell machine                            </span>
+            <span class="d-xxl-none ">
+            Sell            </span>
+        </a>
+    </section>
+            
+<section id="header-navigation" class="d-flex gap-l-10 gap-lg-l-30 gap-first-0 gap-last-0 justify-content-end">
+    
+    <a href="/main/favorites"
+       class="d-none d-md-flex flex-column bar-right align-items-center justify-content-center justify-content-lg-end gap-b-5 gap-last-0 text-dark line-height-1"
+       aria-label="Watch list">
+        <i class="fa-solid fa-star"></i>
+        <small class="d-none d-lg-block text-truncate">
+            Watch list            <span id="favorite-count">
+                (0)
+            </span>
+        </small>
+    </a>
+    
+    
+
+    <a href="/account/security/login"
+       class="d-none d-lg-flex flex-column align-items-center justify-content-center bar-right justify-content-lg-end gap-b-5 gap-last-0 line-height-1 text-dark">
+        <i class="fa-solid fa-user"></i>
+        <small class="d-none d-lg-block">
+            Login        </small>
+    </a>
+    
+    <div
+        class="d-flex align-items-center text-dark flex-column gap-b-5 gap-last-0 line-height-1 justify-content-center justify-content-lg-end"
+        role="button"
+        aria-label="Menu"
+        onclick="header.menu.toggle()">
+        <span id="nav-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </span>
+    <small class="d-none d-lg-block">
+        Menu    </small>
+</div>
+<nav class="ms-navigation">
+    <span class="caret d-none d-lg-block"></span>
+    <div class="ms-menu-level-1">
+        <p class="h4 px-3 d-none d-lg-block pt-3 pb-2">
+            Menu        </p>
+        <ul><li><span style="position: relative;"><i class="fa-solid fa-magnifying-glass me-2"></i>Search<div class="position-absolute top-0 bottom-0 start-0 d-flex align-items-center justify-content-end" style="right: 0.75rem;" onclick="header.menu.toggleSubmenu(this);event.preventDefault();"><i class="fa-solid fa-chevron-down"></i></div></span><ul class="ms-menu ms-menu-level-2"><li><a href="/s/ci-1">Classified listings</a></li>
+<li><a href="/auctions/">Auctions</a></li>
+<li><a href="/main/search/index">Advanced search</a></li>
+<li><a href="/Haendler">Dealer</a></li>
+<li><a id="advertise-button" onclick="frontend.inquiry.categoryInquiry.openModal()">Submit request</a></li></ul></li>
+<li><span style="position: relative;"><i class="fa-solid fa-tags me-2"></i>Offer<div class="position-absolute top-0 bottom-0 start-0 d-flex align-items-center justify-content-end" style="right: 0.75rem;" onclick="header.menu.toggleSubmenu(this);event.preventDefault();"><i class="fa-solid fa-chevron-down"></i></div></span><ul class="ms-menu ms-menu-level-2"><li><a href="/tariffs/">List Machines</a></li>
+<li><a href="https://service.machineseeker.com/auctions-offer/">Publish auctions</a></li>
+<li><a href="/tariffs/">Pricing & Plans</a></li>
+<li><a href="https://service.machineseeker.com/incredible-outreach/">Advertising on Machineseeker</a></li></ul></li>
+<li><a href="/main/favorites/index"><i class="fa-solid fa-star me-2"></i>Watch list</a></li>
+<li><a href="/account/security/login"><i class="fa-solid fa-user me-2"></i>Login & Registration</a></li></ul>    </div>
+</nav>
+</section>
+
+                <div id="ms-navigation-overlay"></div>
+    </section>
+    <section id="category-teaser">
+        
+    </section>
+        </header>
+        <main>
+        <div class="main-container-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="row my-3">
+                    <div class="col">
+                        <h1 class="fs-2 text-gray-100">
+                            <b>
+                                Page not found                                (Error 404)
+                            </b>
+                        </h1>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col border border-gray rounded pt-4">
+                        <h2 class="fs-3 text-gray-100"><b>What happened?</b></h2>
+                        <p>
+                            This link leads nowhere. Perhaps you have written in the link incorrectly or have clicked on an old link.                        </p>
+                        <h2 class="fs-3 text-gray-100"><b>What can I do?</b></h2>
+                        <p>
+                            Please use the search field, the <a href="/main/search/index">detailed search</a>, or the menu to find what you need.                        </p>
+                        <form id="w0" action="/main/search/index" method="get">
+                        <div class="row mb-3">
+                            <div class="col-8 col-md-9">
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Search by name, manufacturer, model, ..." name="search-word" maxlength="256"/>
+                            </div>
+                            <div class="col-4 col-md-3">
+                                <button class="btn btn-primary btn-block">
+                                    <i class="fa-solid fa-magnifying-glass"></i> Search                                </button>
+                            </div>
+                        </div>
+                        </form>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    </main>
+            <footer>
+            <section id="footer" class="container-fluid">
+    <div class="row">
+        
+<section id="footer-sponsoring" class="bg-gray-80 py-4 container-fluid">
+    <div class="row mb-2">
+        <div class="col">
+            <p class="h5 text-white text-center">
+                Machineseeker.com is official sponsor of:            </p>
+        </div>
+    </div>
+    <div id="sponsoringRow" class="d-flex flex-wrap justify-content-center align-items-center">
+                    <div class="d-flex align-items-center">
+                                    <a class="px-3" target="_blank"
+                       href="javascript:indexControl.goToLink('https:[SLASH][SLASH]company.machineseeker.com[SLASH]sponsoring[SLASH]')">
+                        <img loading="lazy" alt="EHF Finals Men" class="mb-2 mb-md-0" width="188" height="106"
+                             src="https://cdn.machineseeker.com/img/frontend/template/footer/sponsoring/ehf_men.svg?v=1742898169">
+                    </a>
+                            </div>
+                    <div class="d-flex align-items-center">
+                                    <a class="px-3" target="_blank"
+                       href="javascript:indexControl.goToLink('https:[SLASH][SLASH]company.machineseeker.com[SLASH]sponsoring[SLASH]')">
+                        <img loading="lazy" alt="Snooker" class="mb-2 mb-md-0" width="188" height="106"
+                             src="https://cdn.machineseeker.com/img/frontend/template/footer/sponsoring/machineseeker_snooker.svg?v=1739437402">
+                    </a>
+                            </div>
+                    <div class="d-flex align-items-center">
+                                    <a class="px-3" target="_blank"
+                       href="javascript:indexControl.goToLink('https:[SLASH][SLASH]company.machineseeker.com[SLASH]sponsoring[SLASH]')">
+                        <img loading="lazy" alt="Darts EM" class="mb-2 mb-md-0" width="188" height="106"
+                             src="https://cdn.machineseeker.com/img/frontend/template/footer/sponsoring/machineseeker_european_championship.svg?v=1739437402">
+                    </a>
+                            </div>
+                    <div class="d-flex align-items-center">
+                                    <a class="px-3" target="_blank"
+                       href="javascript:indexControl.goToLink('https:[SLASH][SLASH]company.machineseeker.com[SLASH]sponsoring[SLASH]')">
+                        <img loading="lazy" alt="Olympia" class="mb-2 mb-md-0" width="188" height="106"
+                             src="https://cdn.machineseeker.com/img/frontend/template/footer/sponsoring/td_olympia.svg?v=1739437402">
+                    </a>
+                            </div>
+                    <div class="d-flex align-items-center">
+                                    <a class="px-3" target="_blank"
+                       href="javascript:indexControl.goToLink('https:[SLASH][SLASH]company.machineseeker.com[SLASH]sponsoring[SLASH]')">
+                        <img loading="lazy" alt="EHF Champions League" class="mb-2 mb-md-0" width="188" height="106"
+                             src="https://cdn.machineseeker.com/img/frontend/template/footer/sponsoring/ehf_b_ms.svg?v=1756711357">
+                    </a>
+                            </div>
+                    <div class="d-flex align-items-center">
+                                    <a class="px-3" target="_blank"
+                       href="javascript:indexControl.goToLink('https:[SLASH][SLASH]company.machineseeker.com[SLASH]sponsoring[SLASH]')">
+                        <img loading="lazy" alt="Morlock Motors" class="mb-2 mb-md-0" width="188" height="106"
+                             src="https://cdn.machineseeker.com/img/frontend/template/footer/sponsoring/morlock_motors.svg?v=1739437402">
+                    </a>
+                            </div>
+            </div>
+</section>
+
+                    <section id="footer-alert">
+    <div style="position: fixed;bottom: 10px;right: 0;left: 0;margin-right: auto;margin-left: auto;max-width: 320px;z-index: 5555;">
+        <div class="text-center alert alert-success d-none">
+            <strong>
+                <i class="fa-solid fa-circle-check fa-3x d-block mb-3"></i>
+                Successful:
+            </strong>
+            Task carried out        </div>
+        <div class="text-center alert alert-danger d-none alert-dismissible p-3">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>
+                <i class="fa-solid fa-circle-xmark fa-3x d-block mb-3"></i>
+                Error:
+            </strong>
+            Task could not be carried out        </div>
+    </div>
+</section>            
+
+<!-- endregion -->
+
+<section id="footer-telephone_number" class="container-fluid bg-gray-60 text-light">
+    <div class="container">
+        <div class="row ps-3 py-4">
+                            <div class="col-xl-4 col-md-6 col-sm-12 py-1">
+                    <div class="row">
+                        <div class="col-auto p-0">
+                            <img loading="lazy" src="https://cdn.machineseeker.com/img/frontend/main/flags/blank24.png?v=1739437402" class="d-block flag24 flag24-gb"
+                                 alt="Flag gb">
+                        </div>
+                        <div class="col">
+                            <a class="text-light  no-underline "
+                               href="tel:+442033180072">
+                                +44 20 331 800 72                            </a>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-xl-4 col-md-6 col-sm-12 py-1">
+                    <div class="row">
+                        <div class="col-auto p-0">
+                            <img loading="lazy" src="https://cdn.machineseeker.com/img/frontend/main/flags/blank24.png?v=1739437402" class="d-block flag24 flag24-de"
+                                 alt="Flag de">
+                        </div>
+                        <div class="col">
+                            <a class="text-light  no-underline "
+                               href="tel:+492018578610">
+                                +49 201 857 86 10                            </a>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-xl-4 col-md-6 col-sm-12 py-1">
+                    <div class="row">
+                        <div class="col-auto p-0">
+                            <img loading="lazy" src="https://cdn.machineseeker.com/img/frontend/main/flags/blank24.png?v=1739437402" class="d-block flag24 flag24-nl"
+                                 alt="Flag nl">
+                        </div>
+                        <div class="col">
+                            <a class="text-light  no-underline "
+                               href="tel:+4920185786180">
+                                +49 201 857 86 180                            </a>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-xl-4 col-md-6 col-sm-12 py-1">
+                    <div class="row">
+                        <div class="col-auto p-0">
+                            <img loading="lazy" src="https://cdn.machineseeker.com/img/frontend/main/flags/blank24.png?v=1739437402" class="d-block flag24 flag24-es"
+                                 alt="Flag es">
+                        </div>
+                        <div class="col">
+                            <a class="text-light  no-underline "
+                               href="tel:+34911433456">
+                                +34 911 433 456                            </a>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</section>
+            
+<section id="footer-seo-listing-bar" class="container-fluid bg-gray-60 text-light">
+    <div class="row">
+        <div class="col">
+            <p class="text-center">Recent machinery searches:</p>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center flex-wrap pb-3" style="row-gap: 1.5rem;">
+                    <div>
+                <a href="/mss/convancional+lathe"
+                   class="px-3 text-gray-170 text-hover-gray-190 fs-7 border-right border-secondary">
+                    Convancional Lathe                </a>
+            </div>
+                    <div>
+                <a href="/mss/hydraulic+lathe+steady"
+                   class="px-3 text-gray-170 text-hover-gray-190 fs-7 border-right border-secondary">
+                    Hydraulic Lathe Steady                </a>
+            </div>
+                    <div>
+                <a href="/mss/swarf+crusher"
+                   class="px-3 text-gray-170 text-hover-gray-190 fs-7 border-right border-secondary">
+                    Swarf Crusher                </a>
+            </div>
+                    <div>
+                <a href="/Commercial-vehicles/ci-7"
+                   class="px-3 text-gray-170 text-hover-gray-190 fs-7 border-right border-secondary">
+                    commercial vehicles                </a>
+            </div>
+                    <div>
+                <a href="/Chemico-pharmaceutical-machinery/ci-6"
+                   class="px-3 text-gray-170 text-hover-gray-190 fs-7 border-right border-secondary">
+                    machinery for chemical & pharmaceutical industry                </a>
+            </div>
+                    <div>
+                <a href="/mss/corona+tretmant+machine"
+                   class="px-3 text-gray-170 text-hover-gray-190 fs-7 border-right border-secondary">
+                    Corona Tretmant Machine                </a>
+            </div>
+                    <div>
+                <a href="/mss/hydraulic+copy+lathe+dubid"
+                   class="px-3 text-gray-170 text-hover-gray-190 fs-7 ">
+                    Hydraulic Copy Lathe Dubid                </a>
+            </div>
+            </div>
+</section>            <section id="footer-links" class="container-fluid bg-gray-45">
+    <div class="container">
+        <div class="row py-3">
+            
+<div class="col-auto fs-7 py-3">
+    <span class="h6 text-light d-block">Sell</span>
+            <div class="d-block mb-4">
+            <a class="text-gray-190 text-hover-gray-245" href="/tariffs/"><span>Publish listings</span></a><br>
+        </div>
+            <div class="d-block mb-4">
+            <a class="text-gray-190 text-hover-gray-245" href="/customer/listing-management"><span>Manage listings</span></a><br>
+        </div>
+            <div class="d-block mb-4">
+            <a class="text-gray-190 text-hover-gray-245" href="https://service.machineseeker.com/incredible-outreach/" rel="noopener" target="_blank"><span>Book a banner ad</span></a><br>
+        </div>
+            <div class="d-block mb-4">
+            <a class="text-gray-190 text-hover-gray-245" href="https://service.machineseeker.com/trust-seal/" rel="noopener" target="_blank"><span>Trust Seal</span></a><br>
+        </div>
+    </div>            
+<div class="col-auto fs-7 py-3">
+    <span class="h6 text-light d-block">Service & support</span>
+            <div class="d-block mb-4">
+            <a class="text-gray-190 text-hover-gray-245" href="/account/security/login"><span>Login</span></a><br>
+        </div>
+            <div class="d-block mb-4">
+            <a class="text-gray-190 text-hover-gray-245" href="/help/"><span>FAQ/help</span></a><br>
+        </div>
+            <div class="d-block mb-4">
+            <a class="text-gray-190 text-hover-gray-245" href="/contact/"><span>Contact</span></a><br>
+        </div>
+            <div class="d-block mb-4">
+            <a class="text-gray-190 text-hover-gray-245" href="/site/contract-draft"><span>Sample Sales Contract</span></a><br>
+        </div>
+    </div>            
+<div class="col-auto fs-7 py-3">
+    <span class="h6 text-light d-block">Company</span>
+            <div class="d-block mb-4">
+            <a class="text-gray-190 text-hover-gray-245" href="https://company.machineseeker.com/" rel="noopener" target="_blank"><span>About us</span></a><br>
+        </div>
+            <div class="d-block mb-4">
+            <a class="text-gray-190 text-hover-gray-245" href="https://company.machineseeker.com/press/" rel="noopener" target="_blank"><span>Newsroom</span></a><br>
+        </div>
+            <div class="d-block mb-4">
+            <a class="text-gray-190 text-hover-gray-245" href="https://company.machineseeker.com/jobs/" rel="noopener" target="_blank"><span>Jobs</span></a><br>
+        </div>
+    </div>            
+<div class="col-auto fs-7 py-3">
+    <span class="h6 text-light d-block">Legal matters</span>
+            <div class="d-block mb-4">
+            <a class="text-gray-190 text-hover-gray-245" href="/imprint/"><span>Imprint</span></a><br>
+        </div>
+            <div class="d-block mb-4">
+            <a class="text-gray-190 text-hover-gray-245" href="/terms/"><span>Terms & Conditions</span></a><br>
+        </div>
+            <div class="d-block mb-4">
+            <a class="text-gray-190 text-hover-gray-245" href="/rules/"><span>Marketplace rules</span></a><br>
+        </div>
+            <div class="d-block mb-4">
+            <a class="text-gray-190 text-hover-gray-245" href="/privacy/"><span>Privacy statement</span></a><br>
+        </div>
+    </div>            <div id="social-links" class="col-auto p-1 pt-3">
+                
+
+    <a class="p-0 text-gray-190 text-hover-white text-decoration-none" href="https://blog.machineseeker.com/" target="_blank" rel="noopener">
+        <div class="d-inline-block text-center px-3">
+            <div class="d-inline-block social rounded-circle bg-gray-120 py-1">
+                <i class="fa-solid fa-comment align-middle"></i>
+            </div>
+            <div class="fs-8 pt-1">Blog</div>
+        </div>
+    </a>
+    <a class="p-0 text-gray-190 text-hover-white text-decoration-none" href="https://www.facebook.com/Machineseeker/?fref=ts" target="_blank" rel="nofollow noopener">
+        <div class="d-inline-block text-center px-3">
+            <div class="d-inline-block social rounded-circle bg-gray-120 py-1">
+                <i class="fa-brands fa-facebook-f align-middle"></i>
+            </div>
+            <div class="fs-8 pt-1">Facebook</div>
+        </div>
+    </a>
+    <a class="p-0 text-gray-190 text-hover-white text-decoration-none" href="https://x.com/Machineseeker" target="_blank" rel="nofollow noopener">
+        <div class="d-inline-block text-center px-3">
+            <div class="d-inline-block social rounded-circle bg-gray-120 py-1">
+                <i class="fa-brands fa-x-twitter align-middle"></i>
+            </div>
+            <div class="fs-8 pt-1">X</div>
+        </div>
+    </a>
+    <a class="p-0 text-gray-190 text-hover-white text-decoration-none" href="https://www.linkedin.com/company/maschinensucher.de-machineseeker.com" target="_blank" rel="nofollow noopener">
+        <div class="d-inline-block text-center px-3">
+            <div class="d-inline-block social rounded-circle bg-gray-120 py-1">
+                <i class="fa-brands fa-linkedin-in align-middle"></i>
+            </div>
+            <div class="fs-8 pt-1">LinkedIn</div>
+        </div>
+    </a>
+            </div>
+        </div>
+    </div>
+</section>            
+<section id="footer-hint" class="container-fluid bg-gray-45">
+    <div class="container">
+        <div class="row">
+            <div class="col-auto fs-7 text-gray-150 py-3">
+                <p>
+                    All information, offers and prices on this website are subject to change and non-binding!                    <br/><br/>
+                    By using this website you accept our <a class="text-gray-190 text-hover-gray-245" href="/terms/"><b>terms and conditions</b></a> and <a class="text-gray-190 text-hover-gray-245" href="/privacy/"><b>privacy policy</b></a>.                    <br/>
+                    Designated trademarks belong to their respective holders.                    <br/>
+                    Machineseeker Group GmbH does not assume liability for the content of linked external websites.                </p>
+                <p class="text-gray-150">
+                    &copy; 1999 - 2025 Machineseeker Group GmbH                </p>
+                <p class="small text-gray-150">
+                    This website is protected by reCAPTCHA and the <a class="text-gray-190 text-hover-gray-245 fw-bold" href="https://policies.google.com/privacy" rel="nofollow">Privacy Policy</a> and <a class="text-gray-190 text-hover-gray-245 fw-bold" href="https://policies.google.com/terms" rel="nofollow">Terms of Service</a> from Google apply.                </p>
+            </div>
+        </div>
+    </div>
+</section>
+            </div>
+</section>
+
+
+        </footer>
+            </body>
+    </html>

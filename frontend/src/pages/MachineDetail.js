@@ -23,6 +23,7 @@ export const MachineDetail = () => {
   useEffect(() => {
     fetchMachineDetails();
     fetchPriceHistory();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const fetchMachineDetails = async () => {
@@ -155,16 +156,16 @@ export const MachineDetail = () => {
               <ResponsiveContainer width="100%" height={300}>
                 <LineChart data={chartData}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
-                  <XAxis 
-                    dataKey="date" 
+                  <XAxis
+                    dataKey="date"
                     tick={{ fontSize: 12, fill: '#64748b' }}
                     stroke="#cbd5e1"
                   />
-                  <YAxis 
+                  <YAxis
                     tick={{ fontSize: 12, fill: '#64748b' }}
                     stroke="#cbd5e1"
                   />
-                  <Tooltip 
+                  <Tooltip
                     contentStyle={{
                       backgroundColor: '#ffffff',
                       border: '1px solid #e2e8f0',
@@ -172,10 +173,10 @@ export const MachineDetail = () => {
                       fontSize: '12px'
                     }}
                   />
-                  <Line 
-                    type="monotone" 
-                    dataKey="price" 
-                    stroke="#0f172a" 
+                  <Line
+                    type="monotone"
+                    dataKey="price"
+                    stroke="#0f172a"
                     strokeWidth={2}
                     dot={{ fill: '#0f172a', r: 4 }}
                   />
